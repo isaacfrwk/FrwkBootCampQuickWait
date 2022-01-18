@@ -59,6 +59,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrwkBootCampQuickWait.Speci
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrwkBootCampQuickWait.SuportRequests.Api", "src\Services\SuportRequests\FrwkBootCampQuickWait.SuportRequests.Api\FrwkBootCampQuickWait.SuportRequests.Api.csproj", "{2DBBF37A-DDD8-4C23-B88E-96CE7B24F3B1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrwkBootCampQuickWait.Remedies.Application", "src\Services\Remedies\Remedies.Application\FrwkBootCampQuickWait.Remedies.Application.csproj", "{8C60DE4D-9303-4931-8AF4-2B084F94E108}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrwkBootCampQuickWait.Remedies.Domain", "src\Services\Remedies\FrwkBootCampQuickWait.Remedies.Domain\FrwkBootCampQuickWait.Remedies.Domain.csproj", "{8300B2B9-F2F5-485F-A441-DAA46FD7C3F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrwkBootCampQuickWait.Remedies.Infrastructure", "src\Services\Remedies\FrwkBootCampQuickWait.Remedies.Infrastructure\FrwkBootCampQuickWait.Remedies.Infrastructure.csproj", "{31440E41-96C0-4B66-A454-B76B7E7D487D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -109,6 +115,18 @@ Global
 		{2DBBF37A-DDD8-4C23-B88E-96CE7B24F3B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DBBF37A-DDD8-4C23-B88E-96CE7B24F3B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DBBF37A-DDD8-4C23-B88E-96CE7B24F3B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C60DE4D-9303-4931-8AF4-2B084F94E108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C60DE4D-9303-4931-8AF4-2B084F94E108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C60DE4D-9303-4931-8AF4-2B084F94E108}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C60DE4D-9303-4931-8AF4-2B084F94E108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8300B2B9-F2F5-485F-A441-DAA46FD7C3F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8300B2B9-F2F5-485F-A441-DAA46FD7C3F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8300B2B9-F2F5-485F-A441-DAA46FD7C3F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8300B2B9-F2F5-485F-A441-DAA46FD7C3F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31440E41-96C0-4B66-A454-B76B7E7D487D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31440E41-96C0-4B66-A454-B76B7E7D487D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31440E41-96C0-4B66-A454-B76B7E7D487D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31440E41-96C0-4B66-A454-B76B7E7D487D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -141,6 +159,9 @@ Global
 		{EA8EF1A3-DA23-4BF0-A707-DBB27D0DEB0E} = {8F3779A8-6CDE-42F8-9B45-19E5694A1A46}
 		{B95A4EC2-A24F-4384-A64F-009EC1D37E38} = {E00EF20D-846F-4FA3-B2F0-A3FF993A8AEC}
 		{2DBBF37A-DDD8-4C23-B88E-96CE7B24F3B1} = {72EA0A30-8416-4D10-8F24-6049F52FFB76}
+		{8C60DE4D-9303-4931-8AF4-2B084F94E108} = {9E8B576B-CCB2-4B7E-A685-EA80ED1F661D}
+		{8300B2B9-F2F5-485F-A441-DAA46FD7C3F5} = {9E8B576B-CCB2-4B7E-A685-EA80ED1F661D}
+		{31440E41-96C0-4B66-A454-B76B7E7D487D} = {9E8B576B-CCB2-4B7E-A685-EA80ED1F661D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34797958-5F34-4EFB-9C1F-5B36BEC676D4}
