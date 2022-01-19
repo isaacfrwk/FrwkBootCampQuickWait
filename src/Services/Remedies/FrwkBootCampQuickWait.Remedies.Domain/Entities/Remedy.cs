@@ -1,12 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace FrwkBootCampQuickWait.Remedies.Domain.Entities
 {
-    public class Remedy
+    public sealed class Remedy
     {
+        #region "Propriedades"
+
+        public Guid Id { get; private set; }
+
+        public string Nome { get; private set; }
+
+        #endregion
+
+        #region "Construtor"
+
+        public Remedy(string nome)
+        {
+            Id = Guid.NewGuid();
+            Nome = nome;
+        }
+
+        #endregion
+
     }
 }
