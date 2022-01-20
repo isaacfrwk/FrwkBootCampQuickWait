@@ -59,11 +59,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrwkBootCampQuickWait.Speci
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrwkBootCampQuickWait.SuportRequests.Api", "src\Services\SuportRequests\FrwkBootCampQuickWait.SuportRequests.Api\FrwkBootCampQuickWait.SuportRequests.Api.csproj", "{2DBBF37A-DDD8-4C23-B88E-96CE7B24F3B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrwkBootCampQuickWait.Remedies.Application", "src\Services\Remedies\Remedies.Application\FrwkBootCampQuickWait.Remedies.Application.csproj", "{8C60DE4D-9303-4931-8AF4-2B084F94E108}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrwkBootCampQuickWait.Remedies.Application", "src\Services\Remedies\Remedies.Application\FrwkBootCampQuickWait.Remedies.Application.csproj", "{8C60DE4D-9303-4931-8AF4-2B084F94E108}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrwkBootCampQuickWait.Remedies.Domain", "src\Services\Remedies\FrwkBootCampQuickWait.Remedies.Domain\FrwkBootCampQuickWait.Remedies.Domain.csproj", "{8300B2B9-F2F5-485F-A441-DAA46FD7C3F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrwkBootCampQuickWait.Remedies.Domain", "src\Services\Remedies\FrwkBootCampQuickWait.Remedies.Domain\FrwkBootCampQuickWait.Remedies.Domain.csproj", "{8300B2B9-F2F5-485F-A441-DAA46FD7C3F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrwkBootCampQuickWait.Remedies.Infrastructure", "src\Services\Remedies\FrwkBootCampQuickWait.Remedies.Infrastructure\FrwkBootCampQuickWait.Remedies.Infrastructure.csproj", "{31440E41-96C0-4B66-A454-B76B7E7D487D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrwkBootCampQuickWait.Remedies.Infrastructure", "src\Services\Remedies\FrwkBootCampQuickWait.Remedies.Infrastructure\FrwkBootCampQuickWait.Remedies.Infrastructure.csproj", "{31440E41-96C0-4B66-A454-B76B7E7D487D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrwkBootCampQuickWait.Hospitals.Application", "src\Services\Hospitals\FrwkBootCampQuickWait.Hospitals.Application\FrwkBootCampQuickWait.Hospitals.Application.csproj", "{6556774D-8702-41FB-B2DD-88E0417560D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrwkBootCampQuickWait.Hospitals.Domain", "src\Services\Hospitals\FrwkBootCampQuickWait.Hospitals.Domain\FrwkBootCampQuickWait.Hospitals.Domain.csproj", "{E3419675-D97A-4503-AB5C-9BB533B91AA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrwkBootCampQuickWait.Hospitals.Infrastructure", "src\Services\Hospital\FrwkBootCampQuickWait.Hospitals.Infrastructure\FrwkBootCampQuickWait.Hospitals.Infrastructure.csproj", "{3C338CFB-FD1A-451F-B1D9-E97B1C3A6013}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +133,18 @@ Global
 		{31440E41-96C0-4B66-A454-B76B7E7D487D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31440E41-96C0-4B66-A454-B76B7E7D487D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31440E41-96C0-4B66-A454-B76B7E7D487D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6556774D-8702-41FB-B2DD-88E0417560D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6556774D-8702-41FB-B2DD-88E0417560D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6556774D-8702-41FB-B2DD-88E0417560D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6556774D-8702-41FB-B2DD-88E0417560D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3419675-D97A-4503-AB5C-9BB533B91AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3419675-D97A-4503-AB5C-9BB533B91AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3419675-D97A-4503-AB5C-9BB533B91AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3419675-D97A-4503-AB5C-9BB533B91AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C338CFB-FD1A-451F-B1D9-E97B1C3A6013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C338CFB-FD1A-451F-B1D9-E97B1C3A6013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C338CFB-FD1A-451F-B1D9-E97B1C3A6013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C338CFB-FD1A-451F-B1D9-E97B1C3A6013}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -162,6 +180,9 @@ Global
 		{8C60DE4D-9303-4931-8AF4-2B084F94E108} = {9E8B576B-CCB2-4B7E-A685-EA80ED1F661D}
 		{8300B2B9-F2F5-485F-A441-DAA46FD7C3F5} = {9E8B576B-CCB2-4B7E-A685-EA80ED1F661D}
 		{31440E41-96C0-4B66-A454-B76B7E7D487D} = {9E8B576B-CCB2-4B7E-A685-EA80ED1F661D}
+		{6556774D-8702-41FB-B2DD-88E0417560D3} = {FA71E6C6-88A6-4DD2-88F8-A2A16F770226}
+		{E3419675-D97A-4503-AB5C-9BB533B91AA4} = {FA71E6C6-88A6-4DD2-88F8-A2A16F770226}
+		{3C338CFB-FD1A-451F-B1D9-E97B1C3A6013} = {FA71E6C6-88A6-4DD2-88F8-A2A16F770226}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {34797958-5F34-4EFB-9C1F-5B36BEC676D4}
