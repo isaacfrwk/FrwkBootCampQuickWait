@@ -10,19 +10,27 @@ namespace FrwkBootCampQuickWait.Hospitals.Domain.Services
         private readonly ConnectionFactory _connectionFactory;
         private readonly IConnection _connection;
         private readonly IModel _channel;
-        public string ContextQueue { get; }
+        private readonly RabbitSettings _rabbitSettings;
+        protected abstract string ContextQueue { get;}
 
         protected RabbitMqConsumer(RabbitSettings rabbitSettings)
         {
-            _connectionFactory = new ConnectionFactory() { HostName = rabbitSettings.Host };
+            _connectionFactory = new ConnectionFactory() { HostName = rabbitSettings.Host};
             _connection = _connectionFactory.CreateConnection();
             _channel = _connection.CreateModel();
+            _rabbitSettings = rabbitSettings;
         }
 
         public async Task ConsumeAsync(string topicName, string queueName)
         {
-            _channel.QueueBind(queue: $"{queueName}",
-                                  exchange: $"{ContextQueue}.{topicName}",
+            var queue = $"{_rabbitSettings.Queue}.{ContextQueue}.{queueName}";
+            var topic = $"{_rabbitSettings.Queue}.{ContextQueue}.{topicName}";
+
+            _channel.QueueDeclare(queue, true, false, false);
+            _channel.ExchangeDeclare(topic, "topic", true, false);
+
+            _channel.QueueBind(queue: queue,
+                                  exchange: topic,
                                   routingKey: "");
 
             var consumer = new EventingBasicConsumer(_channel);
@@ -34,7 +42,7 @@ namespace FrwkBootCampQuickWait.Hospitals.Domain.Services
                 var routingKey = ea.RoutingKey;
             };
 
-            _channel.BasicConsume(queue: queueName,
+            _channel.BasicConsume(queue: queue,
                                  autoAck: true,
                                  consumer: consumer);
 

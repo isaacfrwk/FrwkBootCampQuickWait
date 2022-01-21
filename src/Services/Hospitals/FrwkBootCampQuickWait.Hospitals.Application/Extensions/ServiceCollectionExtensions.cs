@@ -10,8 +10,8 @@ namespace FrwkBootCampQuickWait.Hospitals.Application.Extensions
     {
         public static IServiceCollection InjectHostedServices(this IServiceCollection services)
         {
-            //services
-            //    .AddHostedService<HospitalConsumer>();
+            services
+                .AddHostedService<HospitalConsumer>();
 
             return services;
         }
@@ -19,7 +19,8 @@ namespace FrwkBootCampQuickWait.Hospitals.Application.Extensions
         public static IServiceCollection InjectSettings(this IServiceCollection services, IConfiguration configuration)
         {
             services
-                .AddSettings<DatabaseSettings>(configuration);
+                .AddSettings<DatabaseSettings>(configuration)
+                .AddSettings<RabbitSettings>(configuration);
 
             return services;
         }
